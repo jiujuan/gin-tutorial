@@ -23,7 +23,7 @@ type JWTClaims struct {
 
 var (
     Secret = "123#111"  //salt
-    ExpireTime = 36000  //token expire time
+    ExpireTime = 3600  //token expire time
 )
 
 func main() {
