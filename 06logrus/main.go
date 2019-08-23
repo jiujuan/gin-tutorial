@@ -6,6 +6,7 @@ import (
     "github.com/sirupsen/logrus"
 )
 
+//logrus
 func main() {
     log := logrus.New()
     r := gin.New()
