@@ -5,6 +5,7 @@ import (
     "github.com/gin-gonic/gin"
 )
 
+//group router
 func main() {
     r := gin.Default()
 
