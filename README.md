@@ -1,5 +1,5 @@
 # Gin Tutorial
-[gin tutorial](https://github.com/jiujuan/gin-tutorial), executable samples. learn Gin framework. Making Learning Effective, Easy and Fun!
+[Gin tutorial](https://github.com/jiujuan/gin-tutorial), executable samples. learn Gin framework. Making Learning Effective, Easy and Fun!
 
 # Summary
 - [01-quickstart](https://github.com/jiujuan/gin-tutorial/blob/master/01quickstart/main.go)
