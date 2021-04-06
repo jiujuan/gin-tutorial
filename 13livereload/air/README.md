@@ -12,7 +12,7 @@
 
 有好几种安装方法：
 
-1. 经典安装
+1. ### 经典安装
 
    ```sh
    get -u github.com/cosmtrek/air
@@ -34,7 +34,7 @@
 
 
 
-3. docker
+3. ### docker
 
 ```shell
 docker run -it --rm \
