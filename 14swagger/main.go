@@ -33,7 +33,7 @@ func main() {
 	_ = r.Run(":8080")
 }
 
-// @Summary hell API
+// @Summary hello API
 // @description hello接口
 // @Produce json
 // @Version 0.1
