@@ -1,0 +1,51 @@
+{
+    "swagger": "2.0",
+    "info": {
+        "description": "gin-swagger 测试内容",
+        "title": "gin-swagger test",
+        "termsOfService": "test",
+        "contact": {
+            "name": "九卷",
+            "url": "https://github.com/jiujuan",
+            "email": "jiujuanfeng@163.com"
+        },
+        "license": {
+            "name": "APACHE 2.0",
+            "url": "http://www.apache.org/licenses/LICENSE-2.0.html"
+        },
+        "version": "0.1"
+    },
+    "host": "localhost:8080",
+    "basePath": "/",
+    "paths": {
+        "/hello/{name}": {
+            "get": {
+                "description": "hello接口",
+                "consumes": [
+                    "application/json"
+                ],
+                "produces": [
+                    "application/json"
+                ],
+                "summary": "hell API",
+                "parameters": [
+                    {
+                        "type": "string",
+                        "description": "name",
+                        "name": "name",
+                        "in": "path",
+                        "required": true
+                    }
+                ],
+                "responses": {
+                    "200": {
+                        "description": "status\":\"OK\",\"message\":\"hello world!\"}",
+                        "schema": {
+                            "type": "string"
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

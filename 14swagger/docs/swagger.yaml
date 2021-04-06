@@ -1,0 +1,35 @@
+basePath: /
+host: localhost:8080
+info:
+  contact:
+    email: jiujuanfeng@163.com
+    name: 九卷
+    url: https://github.com/jiujuan
+  description: gin-swagger 测试内容
+  license:
+    name: APACHE 2.0
+    url: http://www.apache.org/licenses/LICENSE-2.0.html
+  termsOfService: test
+  title: gin-swagger test
+  version: "0.1"
+paths:
+  /hello/{name}:
+    get:
+      consumes:
+      - application/json
+      description: hello接口
+      parameters:
+      - description: name
+        in: path
+        name: name
+        required: true
+        type: string
+      produces:
+      - application/json
+      responses:
+        "200":
+          description: status":"OK","message":"hello world!"}
+          schema:
+            type: string
+      summary: hell API
+swagger: "2.0"
