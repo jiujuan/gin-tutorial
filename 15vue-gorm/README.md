@@ -268,7 +268,7 @@ func InsertStudent() {
 	gorm.Create(&students)
 }
 
-func GetStudents() []Student {
+func GetAllStudents() []Student {
 	var students []Student
 
 	gorm := db.GetDB()
@@ -296,4 +296,6 @@ v1.GET("/db/student/insert", func(c *gin.Context) {
 2.然后在运行新：http://localhost:8080/v1/db/student/insert ， 插入数据
 
 > 新建数据库不会这样在浏览器上运行，这里只是测试编写 gorm 的操作代码。
+
+## 综合 demo，集合vue
 

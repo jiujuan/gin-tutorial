@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>student page</title>
+
+    <link rel="stylesheet" type="text/css" href="/templates/css/student.css">
+
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.12/dist/vue.js" defer></script>
+    <script src="https://unpkg.com/axios/dist/axios.min.js" defer></script>
+    <script src="/templates/js/vue.js" defer></script>
+
+</head>
+<body>
+<div id="app">
+    <label v-for="label in options">
+        <input type="radio" v-model="current" v-bind:value="label.value">{{ label.label }}
+    </label>
+    <p>学生姓名：<input type="text" name='stuname' v-model="stuname" v-bind:class="{'alert-color': !validate }" value='' size="40" placeholder="学生姓名"></p>
+    <p>简 介：<input type="text" name='info' v-model="info" value='' size="40"></p>
+
+    <button v-on:click="addStudent" v-bind:disabled="!isEntered">
+        增 加
+    </button>
+    <hr>
+
+    <table>
+        <thead v-pre>
+            <tr>
+               <th class="index">ID</th>
+                <th class="name">学生名</th>
+                <th class="info">简介</th>
+                <th class="state">状态</th>
+                <th class="delete">删除</th> 
+            </tr>
+        </thead>
+
+        <tbody>
+            <tr v-for="(item, index) in computedStudents">
+                <td class="index">{{ item.id }}</td>
+                <td class="name">{{ item.name }}</td>
+                <td class="info">{{ item.info }}</td>
+                <td class="state">
+                    <button v-on:click="changeStudentState(item)">
+                        {{ labels[item.status] }}
+                    </button>
+                </td>
+                <td class="delete">
+                    <button v-on:click="deleteStudent(item)">
+                        删除
+                    </button>
+                </td>
+            </tr>
+        </tbody>
+    </table>
+</div>
+</body>
+</html>

@@ -1,0 +1,46 @@
+.alert-color {
+    border-color: #ff0000;
+}
+table {
+    border-collapse: collapse;
+}
+thead, tbody {
+    display: block;
+}
+tbody {
+    height: 250px;
+    width: 592px;
+    overflow-x: hidden;
+    overflow-y: scroll;
+}
+th,td {
+    background-color: #ffffff;
+    border: 1px solid #ffcc66;
+    padding: 0 8px;
+    line-height: 40px;
+}
+thead th {
+    background-color: #fff5e5;
+    border: 1px solid #ffcc66;
+    color: #ff9900;
+}
+th.index, td.index {
+    width: 50px;
+}
+th.name, td.name {
+    width: 100px;
+}
+th.info, td.info {
+    width: 200px;
+}
+th.state, td.state {
+    width: 70px;
+    text-align: center;
+}
+th.delete, td.delete {
+    width: 70px;
+    text-align: center;
+}
+tbody tr:hover td {
+    background: #ccffff;
+}
