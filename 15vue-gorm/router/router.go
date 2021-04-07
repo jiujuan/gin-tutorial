@@ -1,7 +1,7 @@
 package router
 
 import (
-	"gin-tutorial/15vue/handler"
+	"gin-tutorial/15vue-gorm/handler"
 	"net/http"
 
 	"github.com/gin-gonic/gin"

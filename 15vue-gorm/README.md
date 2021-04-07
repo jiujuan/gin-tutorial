@@ -1,6 +1,6 @@
-# gin+vue 简单应用
+# gin+vue+gorm 简单应用
 
-gin 结合 vue 的使用，写一个简单的 demo。
+gin 结合 vue，gorm 的使用，写一个简单的 demo。
 
 ## 安装 gin
 
