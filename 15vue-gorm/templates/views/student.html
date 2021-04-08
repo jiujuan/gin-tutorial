@@ -12,9 +12,9 @@
 </head>
 <body>
 <div id="app">
-    <label v-for="label in options">
+    <!-- <label v-for="label in options">
         <input type="radio" v-model="current" v-bind:value="label.value">{{ label.label }}
-    </label>
+    </label> -->
     <p>学生姓名：<input type="text" name='stuname' v-model="stuname" v-bind:class="{'alert-color': !validate }" value='' size="40" placeholder="学生姓名"></p>
     <p>简 介：<input type="text" name='info' v-model="info" value='' size="40"></p>
 
