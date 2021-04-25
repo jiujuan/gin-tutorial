@@ -73,7 +73,7 @@ hystrix.ConfigureCommand("my_command", hystrix.CommandConfig{
 
 > 其他相关问题都可以到 https://github.com/afex/hystrix-go 去查看
 
-## simple
+## simple 代码例子
 
 编写一个简单的程序，
 hystrix.go 编写 hystrix。
