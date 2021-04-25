@@ -1,6 +1,6 @@
 # hystrix- 简介
 
-[hysteix-go](https://github.com/afex/hystrix-go) 是来自于 Netflix 开源的项目：https://github.com/Netflix/Hystrix。
+[hysteix-go](https://github.com/afex/hystrix-go) 灵感是来自于 Netflix 开源的项目：https://github.com/Netflix/Hystrix。
 
 ## 用 hystrix command 命令执行代码：
 
