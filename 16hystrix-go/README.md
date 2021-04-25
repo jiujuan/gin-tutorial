@@ -12,7 +12,9 @@ hystrix.Go("my_command", func() error {
 ```
 
 第一个参数：command 名称，可以把它当成一个独立的服务
+
 第二个参数：处理正常的逻辑
+
 第三个参数：处理调用失败，执行这里的逻辑。就是说上面第二个参数处理逻辑失败就调用这里。保底操作。
           如果服务错误率高导致熔断开启，那么之后的请求也会直接调用此函数。
 
@@ -28,6 +30,7 @@ hystrix.Go("my_command", func() error {
 })
 ```
 hystrix 有2个方法， Do 和 Go 方法。
+
 Go 方法是异步的方式。Do 方法是同步的方式。
 
 2 个方法使用的方式一样。
@@ -72,13 +75,13 @@ hystrix.ConfigureCommand("my_command", hystrix.CommandConfig{
 
 ## simple
 
-编写一个简单的程序
+编写一个简单的程序，
 hystrix.go 编写 hystrix。
 client/client.go 编写请求 hystrix.go。
 
-写完后，运行 go run hystrix.go
+写完后，运行 go run hystrix.go。
 
-在运行：go run client.go
+在运行：go run client.go，
 输出：
 ```shell
 read body:  ret error
