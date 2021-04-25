@@ -25,7 +25,8 @@
 - [11-jwt](https://github.com/jiujuan/gin-tutorial/tree/master/11gin-jwt/demo1)
 - [12-shutdown/gracefull](https://github.com/jiujuan/gin-tutorial/tree/master/12shutdown/gracefull)
 - [13-livereload](https://github.com/jiujuan/gin-tutorial/tree/master/13livereload)
-- [13-swagger](https://github.com/jiujuan/gin-tutorial/tree/master/14swagger)
+- [14-swagger](https://github.com/jiujuan/gin-tutorial/tree/master/14swagger)
+- [15-vue-gorm](https://github.com/jiujuan/gin-tutorial/tree/master/15vue-gorm)
 # Gin Resource
 - [documents](https://gin-gonic.com/docs/)
 - [gin blog](https://gin-gonic.com/blog/)
