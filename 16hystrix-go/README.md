@@ -101,3 +101,7 @@ finished
 ```
 
 hystrix.go 里设置最大请求数 10， 而 client.go 最大请求数是 13， 返回数据失败了 3 个，说明程序运行成功。
+
+## gin 代码例子
+
+简单的把 hystrix-go 封装为 gin 的中间件使用。
