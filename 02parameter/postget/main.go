@@ -1,8 +1,9 @@
 package main
 
 import (
-    "github.com/gin-gonic/gin"
     "net/http"
+
+    "github.com/gin-gonic/gin"
 )
 
 //POST /post?id=1234&page=1 HTTP/1.1
@@ -16,7 +17,7 @@ func main() {
 
 func getName(c *gin.Context) {
     id := c.Query("id")
-    page := c.DefaultPostForm("page", 0)
+    page := c.DefaultPostForm("page", "0")
     name := c.PostForm("name")
     message := c.PostForm("message")
 
