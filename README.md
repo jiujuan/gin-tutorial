@@ -27,6 +27,8 @@
 - [13-livereload](https://github.com/jiujuan/gin-tutorial/tree/master/13livereload)
 - [14-swagger](https://github.com/jiujuan/gin-tutorial/tree/master/14swagger)
 - [15-vue-gorm](https://github.com/jiujuan/gin-tutorial/tree/master/15vue-gorm)
+- [16-hystrix-go](https://github.com/jiujuan/gin-tutorial/tree/master/16hystrix-go) hystrix-go和gin结合使用的demo
+
 # Gin Resource
 - [documents](https://gin-gonic.com/docs/)
 - [gin blog](https://gin-gonic.com/blog/)
