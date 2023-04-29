@@ -5,7 +5,7 @@ import (
     "net/http"
 )
 
-//post http://localhost:5000/ids[a]=123&ids[b]=789&names[first]=jimmy
+//POST http://localhost:5000/name?ids[a]=123&ids[b]=789&names[first]=jimmy
 
 //response:
 //{
@@ -32,5 +32,5 @@ func getName(c *gin.Context) {
         "ids": ids,
         "names": names,
     })
-    c.String(http.StatusOK, "ids: %v, names; %v", ids, names)
+    c.String(http.StatusOK, "\nids: %v, names; %v", ids, names)
 }
